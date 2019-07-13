@@ -1,0 +1,37 @@
+{
+    "name": "yjtec/laravel-cache",
+    "description": "laravel cache",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "kidkang",
+            "email": "723616880@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "nesbot/carbon": "1.36.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Yjtec\\MC\\":"src/"
+        }
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://packagist.laravel-china.org"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Yjtec\\MC\\MyCacheServiceProvider"
+            ],
+            "aliases":{
+                "MC":"Yjtec\\MC\\Facades\\MyCache"
+            }
+        }
+    }
+}
